@@ -110,6 +110,82 @@
 }
 
 
+.appContainer, .wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.appContainer {
+    color: #fff;
+    height: auto;
+    position: relative;
+    width: 100%;
+}
+.wrapper {
+    flex-direction: column;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 70%;
+}
+*, ::before, ::after {
+    border-color: var(--chakra-colors-chakra-border-color);
+}
+:where(*) {
+    border-width: 0px;
+    border-style: solid;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+}
+.imageGroup {
+    box-shadow: 0 5px 15px #fff;
+    display: grid;
+    margin-right: 2rem;
+    padding: calc(clamp(10rem, 1rem + 30vmin, 30rem) / 10);
+    place-items: center;
+    width: 100%;
+	border-radius: 10%;
+}
+.imageGroup>img {
+    aspect-ratio: 16 / 9;
+    border-radius: .5rem;
+    height: 100%;
+    margin-left: 1rem;
+    object-fit: contain;
+    padding: 5px 20px;
+    width: 100%;
+	border-radius: 10%;
+}
+img {
+    border-style: none;
+}
+.marqueeGroup {
+    align-items: center;
+    animation: marquee 10s linear infinite;
+    display: flex;
+    flex-shrink: 0;
+    gap: 2%;
+    justify-content: space-around;
+    margin-bottom: 8rem;
+    margin-top: 8rem;
+    white-space: nowrap;
+    width: 100%;
+}
+.marquee {
+    display: flex;
+    overflow: hidden;
+    -webkit-user-select: none;
+    user-select: none;
+    width: 100%;
+}
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
 </style>
 
 
@@ -272,7 +348,7 @@
 						<div class="row justify-content-start pb-3">
 							<div class="col-md-12 heading-section ftco-animate">
 								
-								<h1 class="big">About</h1>
+								<h1 class="big">About Me</h1>
 								<h2 class="mb-4">About Me</h2>
 								
 								<p>With over 6 Months of comprehensive experience in the field of data analytics, accompanied by a bachelor's degree in engineering. 
@@ -291,6 +367,7 @@
 							</div>
 						</div>
 
+                        <!-- p align=""> <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/> </a> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://www.java.com/en/" target="_blank" rel="noreferrer"> <img src="https://github.com/devicons/devicon/blob/master/icons/java/java-original-wordmark.svg" alt="Java" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://jupyter.org/" target="_blank" rel="noreferrer"> <img src="https://github.com/devicons/devicon/blob/master/icons/jupyter/jupyter-original.svg" alt="jupyter" width="40" height="40"/> </a> <a href="https://numpy.org/" target="_blank" rel="noreferrer"> <img src="https://github.com/devicons/devicon/blob/master/icons/numpy/numpy-original.svg" alt="NumPy" width="40" height="40"/> </a>  <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://github.com/devicons/devicon/blob/master/icons/pandas/pandas-original-wordmark.svg" alt="Pandas" width="40" height="40"/> </a> <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a> <a href="https://pytorch.org/" target="_blank" rel="noreferrer"> <img src="https://github.com/devicons/devicon/blob/master/icons/pytorch/pytorch-original.svg" alt="PyTorch" width="40" height="40"/> </a> <a href="https://matplotlib.org/" target="_blank" rel="noreferrer"> <img src="https://github.com/devicons/devicon/blob/master/icons/matplotlib/matplotlib-original-wordmark.svg" alt="Matplotlib" width="40" height="40"/> </a> <a href="https://keras.io/" target="_blank" rel="noreferrer"> <img src="https://github.com/devicons/devicon/blob/master/icons/keras/keras-original-wordmark.svg" alt="Keras" width="40" height="40"/> </a> <a href="https://scikit-learn.org/stable/" target="_blank" rel="noreferrer"> <img src="https://github.com/devicons/devicon/blob/master/icons/scikitlearn/scikitlearn-original.svg" alt="scikit-learn" width="40" height="40"/> </a> <a href="https://www.selenium.dev/documentation/webdriver/" target="_blank" rel="noreferrer"> <img src="https://github.com/devicons/devicon/blob/master/icons/selenium/selenium-original.svg" alt="Selenium" width="40" height="40"/> </a> <a href="https://www.anaconda.com/" target="_blank" rel="noreferrer"> <img src="https://github.com/devicons/devicon/blob/master/icons/anaconda/anaconda-original.svg" alt="anaconda" width="40" height="40"/> </a> <a href="https://powerbi.microsoft.com/en-us/desktop/" target="_blank" rel="noreferrer"> <img src="https://github.com/microsoft/PowerBI-Icons/blob/main/PNG/Power-BI.png" alt="Power-BI" width="30" height="40"/> </a> <a href="https://www.microsoft.com/en-in/microsoft-365/excel" target="_blank" rel="noreferrer"> <img src="https://github.com/microsoft/PowerBI-Icons/blob/main/SVG/Excel-Workbook.svg" alt="Excel" width="40" height="40"/> </a> <a href="https://stackoverflow.com/" target="_blank" rel="noreferrer"> <img src="https://github.com/devicons/devicon/blob/master/icons/stackoverflow/stackoverflow-original.svg" alt="Stack Overflow" width="40" height="40"/> </a> </p>      -->
 
 						<div class="counter-wrap ftco-animate d-flex mt-md-3">
 							<div class="text">
@@ -303,9 +380,79 @@
 						</div>
 					</div>
 				</div>
+
 			</div>
 		</div>
     </section>
+
+	<div class="appContainer css-0">
+		<div class="wrapper css-0">
+			<div class="skill css-0 col-md-10 heading-section text-center ftco-animate fadeInUp ftco-animated">
+				<!-- <h1 class="chakra-heading css-1jkx6l7">Tech Stack</h1> -->
+				<h1 class="big big-2">Tech Stack</h1>
+				<h2 class="mb-4">Tech Stack</h2>
+			</div>
+			<main class="marquee">
+				<div class="marqueeGroup css-0">
+					<div class="imageGroup css-0"><a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
+						<p class="chakra-text css-0">python</p>
+					</div>
+					<div class="imageGroup css-0"><a href="https://www.java.com/en/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a>
+						<p class="chakra-text css-0"> Java</p>
+					</div>
+					<div class="imageGroup css-0"><a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" alt="mysql" width="40" height="40"/> </a>
+						<p class="chakra-text css-0">MySql</p>
+					</div>
+					<div class="imageGroup css-0"><a href="https://numpy.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/numpy/numpy-original.svg" alt="NumPy" width="40" height="40"/> </a>
+						<p class="chakra-text css-0">NumPy</p>
+					</div>
+					<div class="imageGroup css-0"><a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg" alt="Pandas" width="40" height="40"/> </a>
+						<p class="chakra-text css-0">Pandas</p>
+					</div>
+					<div class="imageGroup css-0"><a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tensorflow/tensorflow-original.svg" alt="tensorflow" width="40" height="40"/> </a>
+						<p class="chakra-text css-0">tensorflow</p>
+					</div>
+					<div class="imageGroup css-0"><a href="https://matplotlib.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/matplotlib/matplotlib-original.svg" alt="Matplotlib" width="40" height="40"/> </a>
+						<p class="chakra-text css-0">Matplotlib</p>
+					</div>
+					<div class="imageGroup css-0"><a href="https://keras.io/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/keras/keras-original.svg" alt="Keras" width="40" height="40"/> </a>
+						<p class="chakra-text css-0">Keras</p>
+					</div>
+					<div class="imageGroup css-0"> <a href="https://scikit-learn.org/stable/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/scikitlearn/scikitlearn-original.svg" alt="scikit-learn" width="40" height="40"/> </a>
+						<p class="chakra-text css-0">Scikit-Learn</p>
+					</div>
+					<div class="imageGroup css-0"><a href="https://www.selenium.dev/documentation/webdriver/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/selenium/selenium-original.svg" alt="Selenium" width="40" height="40"/> </a>
+						<p class="chakra-text css-0">Selenium</p>
+					</div>
+					<div class="imageGroup css-0"><a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a>
+						<p class="chakra-text css-0">Git</p>
+					</div>
+				</div>
+			</main>
+			<div class="skill css-0 col-md-10 heading-section text-center ftco-animate fadeInUp ftco-animated">
+				<!-- <h1 class="chakra-heading css-1jkx6l7">Tech Stack</h1> -->
+				<h1 class="big big-2">Tech Tools</h1>
+				<h2 class="mb-4">Tech Tools</h2>
+			</div>
+			<main class="marquee">
+				<div class="marqueeGroup css-0">
+					<div class="imageGroup css-0"><a href="https://jupyter.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jupyter/jupyter-original.svg" alt="jupyter" width="40" height="40"/> </a>
+						<p class="chakra-text css-0">Jupyter</p>
+					</div>
+					<div class="imageGroup css-0"><a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" alt="vscode" width="40" height="40"/> </a>
+						<p class="chakra-text css-0">Vscode</p>
+					</div>
+					<div class="imageGroup css-0"><a href="https://powerbi.microsoft.com/en-us/desktop/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/PowerBI/PowerBI-original.svg" alt="powerbi" width="30" height="40"/> </a>
+						<p class="chakra-text css-0">Vscode</p>
+					</div>
+					<div class="imageGroup css-0"><a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" alt="vscode" width="40" height="40"/> </a>
+						<p class="chakra-text css-0">Vscode</p>
+					</div>
+
+				</div>
+			</main>
+		</div>
+	</div>
 
 
 
@@ -319,7 +466,7 @@
             <p>Seasoned Senior Data Analyst with 6 Months of experience driving business strategies through data-driven insights. Proven expertise in data analytics, statistical analysis, machine learning algorithms and project management.</p>
           </div>
 		  <div class="col-md-6 text-center ftco-animate">
-			<p><a href="https://drive.google.com/file/d/16_BoeDcReYdFJvjpYsmrlNgJ5ZNhxCHc/view?usp=sharing" class="btn btn-primary py-4 px-5">Download CV</a></p>
+			<p><a href="https://drive.google.com/file/d/1Qn0c5qoQrMiqYcbRBYFQQ0Wm39FfS3Nw/view?usp=sharing" class="btn btn-primary py-4 px-5">Download CV</a></p>
 		</div>
         </div>
 
@@ -588,7 +735,7 @@
           			<span class="icon-globe"></span>
           		</div>
           		<h3 class="mb-4">Download Resume</h3>
-	            <p><a href="https://drive.google.com/file/d/1Mj8rGZq8QHApxx0zwynPMA-r5t_Pylhu/view?usp=sharing">resumelink</a></p>
+	            <p><a href="https://drive.google.com/file/d/1Qn0c5qoQrMiqYcbRBYFQQ0Wm39FfS3Nw/view?usp=sharing">resumelink</a></p>
 	          </div>
           </div>
 
